@@ -5,6 +5,7 @@
  */
 package evidencia_2;
 
+//LIBRERIAS UTILIZADAS
 import java.util.Scanner;
 import java.lang.Math;
 
@@ -20,21 +21,23 @@ public class Evidencia_2 {
     public static void main(String[] args) {
         
         Scanner lector = new Scanner(System.in);
-        
+        //VARIABLES UTILIZADAS
         int radio = 0;
         
+        //ESPACIO PARA INGRESAR EL RADIO
         System.out.println("Ingresa el valor del radio: ");
         radio = lector.nextInt();
         
+        //IMPRESION EN PANTALLA DE LA CIRCUNFERENCIA Y EL AREA
         System.out.println("Circunferencia: "+calcularCircunferencia(radio));
         System.out.println("Área: "+calcularArea(radio));
         
     }
-    
+    //METODO PARA CALCULAR CIRCUNFERENCIA
     public static double calcularCircunferencia(int num1){
         return 2 * Math.PI * num1;
     }
-    
+    //METODO PARA CALCULAR AREA
     public static double calcularArea(int num2){
         return Math.PI * Math.pow(num2, 2);
     }
